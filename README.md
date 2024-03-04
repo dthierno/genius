@@ -1,34 +1,110 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Genius Artificial Intelligence
+Genius AI stands at the forefront of innovation, providing users with access to a suite of AI tools designed to enhance productivity, creativity, and problem-solving capabilities. Powered by Next.js 13, the platform delivers unparalleled performance, scalability, and security, ensuring that users can leverage AI capabilities with confidence.
+
+
+## Overview
+
+The Next.js 13 App Router is a groundbreaking addition to the Next.js framework, allowing developers to design intricate client-side routing effortlessly. Leveraging this powerful tool, we'll integrate a seamless Stripe subscription system, ensuring a smooth billing process for your users. Beyond the core functionalities, we'll embark on an instructive journey of building our SaaS application using a rich palette of web development technologies like React, Tailwind, Prisma, MySQL, Clerk, and more. Each step is elucidated in detail, ensuring a comprehensive learning experience.
+
+
+## Technologies Used
+This SaaS application involves the utilization of various web development technologies, including:
+
+- React: A popular JavaScript library for building user interfaces.
+- Tailwind CSS: A utility-first CSS framework for rapidly building custom designs.
+- Prisma: A modern database toolkit for TypeScript and Node.js.
+- MySQL: An open-source relational database management system.
+- Clerk: An authentication and user management solution.
+- Stripe: A payment processing platform.
+- Crisp: A customer support platform.
+
+
+## Core Functionalities
+
+Beyond basic features, our platform includes several core functionalities:
+
+- Clerk Authentication: Implement secure authentication using Clerk.
+- Sidebar: Create an intuitive navigation experience for users.
+- Dashboard: Design a comprehensive dashboard for managing AI tools.
+- Conversation AI: Integration with OpenAI for conversational AI.
+- Code Generation AI: Utilize OpenAI for code generation tasks.
+- Image Generation AI: Leverage OpenAI for image generation tasks.
+- Music Generation AI: Harness Replicate AI for music generation.
+- Video Generation AI: Use Replicate AI for video generation.
+
+
+## Additional Features
+
+- API Limit: Implement API usage limits for better resource management.
+- API Limit UI Counter: User interface element to display API usage limits.
+- Pro Modal UI: Design modal when user exceeds free plan usage.
+- Stripe Integration: Seamlessly integrate Stripe for subscription management.
+- Error Handling & Customer Support: Integrate Crisp for error handling and customer support.
+- Landing Page: Create an engaging landing page to attract users.
 
 ## Getting Started
+### Prerequisites
 
-First, run the development server:
+**Node version 18.x.x**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+### Cloning the repository
+
+```shell
+git clone https://github.com/dthierno/genius.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Install packages
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```shell
+npm i
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Setup .env file
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+```js
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/dashboard
+NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/dashboard
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+OPENAI_API_KEY=
+REPLICATE_API_TOKEN=
 
-## Deploy on Vercel
+DATABASE_URL=
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+STRIPE_API_KEY=
+STRIPE_WEBHOOK_SECRET=
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+NEXT_PUBLIC_APP_URL="http://localhost:3000"
+```
+
+### Setup Prisma
+
+Add MySQL Database (I used PlanetScale)
+
+```shell
+npx prisma db push
+
+```
+
+### Start the app
+
+```shell
+npm run dev
+```
+
+## Available commands
+
+Running commands with npm `npm run [command]`
+
+| command         | description                              |
+| :-------------- | :--------------------------------------- |
+| `dev`           | Starts a development instance of the app |
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE.md file for details.
