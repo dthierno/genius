@@ -56,7 +56,7 @@ git clone https://github.com/dthierno/genius.git
 ### Install packages
 
 ```shell
-npm i
+npm install
 ```
 
 ### Setup .env file
