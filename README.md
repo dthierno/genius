@@ -39,7 +39,7 @@ Beyond basic features, our platform includes several core functionalities:
 - API Limit UI Counter: User interface element to display API usage limits.
 - Pro Modal UI: Design modal when user exceeds free plan usage.
 - Stripe Integration: Seamlessly integrate Stripe for subscription management.
-- Error Handling & Customer Support: Integrate Crisp for error handling and customer support.
+- Customer Support: Integrate Crisp for customer support.
 - Landing Page: Create an engaging landing page to attract users.
 
 ## Getting Started
