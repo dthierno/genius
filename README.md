@@ -84,7 +84,7 @@ NEXT_PUBLIC_APP_URL="http://localhost:3000"
 
 ### Setup Prisma
 
-Add MySQL Database (I used PlanetScale)
+Create a MySQL Database (I used PlanetScale for this project)
 
 ```shell
 npx prisma db push
