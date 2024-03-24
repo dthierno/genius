@@ -1,5 +1,5 @@
 # Genius Artificial Intelligence
-Genius AI stands at the forefront of innovation, providing users with access to a suite of AI tools designed to enhance productivity, creativity, and problem-solving capabilities. Powered by Next.js 13, the platform delivers unparalleled performance, scalability, and security, ensuring that users can leverage AI capabilities with confidence.
+Genius  stands at the forefront of innovation, providing users with access to a suite of AI tools designed to enhance productivity, creativity, and problem-solving capabilities. Powered by Next.js 13, the platform delivers unparalleled performance, scalability, and security, ensuring that users can leverage AI capabilities with confidence.
 
 
 ## Overview
